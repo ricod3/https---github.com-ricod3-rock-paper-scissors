@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins", serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("rock-paper.webp");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 48px;
+    color: #0d324b;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    text-align: center;
+    background: rgba(78, 181, 217, 0.5);
+    border-radius: 10px;
+}
+
+label {
+    color: #0d324b;
+}
+
+input {
+    background: none;
+    border: none;
+    width: 50px;
+    font-size: 30px;
+    font-family: "Poppins", serif;
+    border-radius: 3px;
+    color: #0d324b;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #0d324b;
+    border: none;
+    color: #c8dcee;
+    text-align: center;
+    font-size: 30px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    background-color: #144a6e;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.ml4 {
+    position: relative;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 2.5em;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: -6rem;
+    right: 0;
+    opacity: 0; 
+  }
+
+
+#gameResults {
+    font-family: "Poppins", serif;
+    color: #0d324b;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+@keyframes flyIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.fly-in {
+    animation: flyIn 1s ease-out;
+}
+

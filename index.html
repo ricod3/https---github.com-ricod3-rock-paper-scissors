@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Poppins">
+    <title>Rock // Paper // Scissors</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Rock // Paper // Scissors</h1>
+    <label for="rounds">Number of rounds:</label>
+    <input type="number" id="rounds" min="1" value="1">
+    <button onclick="startGame()">Start Game</button>
+    <h1 class="ml4">
+        <span class="letters letters-1">Ready</span>
+        <span class="letters letters-2">Dice</span>
+        <span class="letters letters-3">G O !</span>
+    </h1>
+    <!-- <div id="startText" style="opacity: 0; transition: opacity 2s;">S T A R T</div> -->
+    <div id="gameResults"></div>
+    <div id="userInput">
+        <button onclick="submitChoice('Rock')">🪨</button>
+        <button onclick="submitChoice('Paper')">📜</button>
+        <button onclick="submitChoice('Scissors')">✂️</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
